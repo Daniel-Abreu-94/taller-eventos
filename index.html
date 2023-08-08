@@ -13,13 +13,15 @@
     </style>
 </head>
 <body>
+    
     <div id="buttonContainer">
-    <button id="saludoButton">saludar</button>
+        <button id="saludoButton">saludar</button>
     <span id="paddingClickArea"></span>
 </div>
     <script>
-        document.getElementById("saludoButton").onclick = function() {
+        document.getElementById("saludoButton").onclick = function(event) {
             alert("hola!")
+            event.stopPropagation();
         };
     </script>
 <script src="eventos.js"></script>
