@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Taller 7.1.1.</title>
+    
+    <style>
+     #buttonContainer {
+        padding: 5px;
+        background-color: green;
+     }
+    </style>
 </head>
 <body>
+    <div id="buttonContainer">
     <button id="saludoButton">saludar</button>
+    <span id="paddingClickArea"></span>
+</div>
     <script>
         document.getElementById("saludoButton").onclick = function() {
             alert("hola!")
         };
     </script>
+<script src="eventos.js"></script>
 </body>
 </html>
